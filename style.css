@@ -11,7 +11,7 @@
     border: 1px solid red;
     max-width: 100%;
     padding: 30px;
-    background-color: aquamarine;
+    background-color: #FFFFFF;
 }
 .header-left {
     width: 50%;
@@ -50,7 +50,7 @@
     transition: 0.7s ease-in-out;
 }
 .header img:hover {
-    transform: scale(1.15, 1.15);
+    transform: scale(1.20, 1.20);
 }
 .header-btn {
     padding: 10px;
@@ -74,7 +74,7 @@
     font-size: 19px;
 }
 .header-btn:hover {
-    background-color: aquamarine;
+    background-color: #FFFFFF;
     border: 1px solid #E02C6D;
 }
 /* Header responsive for tablet and mobile */
@@ -96,3 +96,124 @@
         margin: 0 auto;
     }
 }
+/* header style end with responsive*/
+/* main-items section start */
+.main-section {
+    max-width: 100%;
+    padding: 50px 50px 30px 50px;
+    background-color: #FFFFFF;
+    border: 1px solid red;
+}
+.main-title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid red;
+}
+.main-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid red;
+    grid-gap: 10px;
+}
+.main-item {
+    box-shadow: 5px 5px 10px gray;
+    display: grid;
+    padding: 10px;
+}
+.main-item img {
+    width: 100%;
+}
+.item-title, .item-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+.item-price {
+    font-weight: 400;
+}
+.item-rating {
+    display: flex;
+    align-items: center;
+}
+.rating {
+    color: gold;
+}
+.rating-number {
+    margin-left: 20px;
+    font-size: 14px;
+}
+.item-description {
+    font-size: 13px;
+}
+@media only screen and (max-width:600px) {
+    .main-items {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:800px) {
+    .main-items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* main items section end with responsive*/
+
+/* see more button start */
+.see-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 15px;
+}
+.see-more a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.8s ease-in-out;
+    border: 1px solid #E02C6D; 
+    /* need */
+}
+.see-more i {
+    margin-left: 10px;
+}
+.see-more a:hover {
+    background-color: #E02C6D;
+}
+/* see more button ended */
+
+
+
+
+
+
+
+
+/* footer area started */
+.footer {
+    background-color: #0A0826;
+    max-width: 100%;
+    border: 1px solid red;
+    padding: 30px;
+}
+.footer-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer-title, .footer-description{
+    color: white;
+    text-align: center;
+}
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 24px;
+    cursor: pointer;
+}
+.footer-icon i {
+    margin: 10px;
+}
+/* footer area ended */
