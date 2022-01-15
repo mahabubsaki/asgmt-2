@@ -154,6 +154,9 @@
     .main-items {
         grid-template-columns: 1fr;
     }
+    .item-price {
+        font-weight: 600;
+    }
 }
 @media only screen and (min-width:601px) and (max-width:800px) {
     .main-items {
