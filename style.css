@@ -8,19 +8,16 @@
 .header {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
     max-width: 100%;
     padding: 30px;
     background-color: #FFFFFF;
 }
 .header-left {
     width: 50%;
-    border: 1px solid red;
     padding: 10px;
 }
 .header-right {
     width: 50%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +45,7 @@
     width: 340px;
     border-radius: 50%;
     transition: 0.7s ease-in-out;
+    cursor: pointer;
 }
 .header img:hover {
     transform: scale(1.20, 1.20);
@@ -63,6 +61,7 @@
     align-items: center;
     justify-content: space-evenly;
     transition: 0.7s ease-in-out;
+    cursor: pointer;
 }
 .header-btn a {
     text-decoration: none;
@@ -102,24 +101,22 @@
     max-width: 100%;
     padding: 50px 50px 30px 50px;
     background-color: #FFFFFF;
-    border: 1px solid red;
 }
 .main-title {
     font-weight: 600;
     text-align: center;
     font-size: 24px;
-    border: 1px solid red;
 }
 .main-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid red;
     grid-gap: 10px;
 }
 .main-item {
     box-shadow: 5px 5px 10px gray;
     display: grid;
     padding: 10px;
+    border-radius: 10px;
 }
 .main-item img {
     width: 100%;
@@ -128,6 +125,13 @@
     font-size: 22px;
     font-weight: 600;
     margin-top: 7px;
+}
+.item-title {
+    cursor: pointer;
+}
+.item-title:hover {
+    text-decoration: underline;
+}
 }
 .item-price {
     font-weight: 400;
@@ -183,19 +187,48 @@
     background-color: #E02C6D;
 }
 /* see more button ended */
-
-
-
-
-
-
-
-
+/* bonus section started */
+.mega-menu {
+    background-color: #0A0826;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.menu-box {
+    display: grid;
+    width: 33%;
+}
+.menu-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.mega-menu a {
+    text-decoration: none;
+    color: white;
+}
+.mega-menu a:hover {
+    color: gray;
+}
+@media only screen and (max-width:600px) {
+    .mega-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-box {
+        margin-bottom: 10px;
+    }
+    .menu-title {
+        margin-bottom: 5px;
+    }
+}
+/* bonus section complete with responsive*/
 /* footer area started */
 .footer {
     background-color: #0A0826;
     max-width: 100%;
-    border: 1px solid red;
     padding: 30px;
 }
 .footer-title {
